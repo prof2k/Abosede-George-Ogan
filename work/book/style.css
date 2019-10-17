@@ -1,0 +1,120 @@
+@import url("C:/Users/Kolawole Elijah/Desktop/sample codes/work/Abosede-George-Ogan/styles/universal-style.css");
+@import url("C:/Users/Kolawole Elijah/Desktop/sample codes/work/Abosede-George-Ogan/styles/header-footer-style.css");
+@import url("C:/Users/Kolawole Elijah/Desktop/sample codes/work/Abosede-George-Ogan/styles/typography.css");
+
+@import url("../../styles/universal-style.css");
+@import url("../../styles/header-footer-style.css");
+@import url("../../styles/typography.css");
+
+:root {
+    --pri-clr: #2c46a4;
+    --sec-clr: #3c3e3e;
+    --pri-hover-clr: #050941;
+    --pri-clr-light: hsl(226, 57%, 96%);
+    --pink: #E91E63;
+    --pink-light: #fef0f4;
+    --sec-clr-lighter: #e5fffc;
+    --useful-color: #2f3f54;
+    --theme-color: #2c46a4;
+    scroll-behavior: smooth;
+    --webkit-scroll-behavior: smooth;
+}
+/* Universal */
+.read-more {
+    display: inline-block;
+    padding: 1em 2em;
+    border: 2px solid var(--pri-clr);
+    /* font-weight: 500; */
+}
+
+.read-more:hover {
+    color: white;
+    background: var(--pri-clr);
+}
+
+/* Portfolio */
+
+article::before {
+    content: "";
+    position: absolute;
+    left: 0; right: 0;
+    height: 70vh;
+    top: 0;
+    background: var(--pri-clr);
+    z-index: -1;
+}
+
+#heading {
+    padding: 50px 0;
+    background: var(--pri-clr);
+    font-size: 3em;
+    line-height: .5em;
+    color: white;
+    text-align: center;
+}
+
+#heading img {
+    display: block;
+    margin:  auto;
+    margin-top: .8em;
+    height: 150px;
+    object-fit: contain;
+}
+
+#heading h1 {
+    margin: 0;
+    display: inline-block;
+}
+
+#heading>* {
+    margin: 0 20px;
+}
+
+/* Article */
+article .inner-container {
+    background: var(--pri-clr-light);
+    padding: 50px 30px;
+    line-height: 1.5em;
+    font-size: 1.1em;
+}
+
+article .inner-container::first-letter {
+    font-family: 'Poiret One';
+    font-size: 3.5em;
+    line-height: 0;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* See More*/
+
+#see-more {
+    padding-top: 0;
+    margin: 20px 0;
+    margin-top: 0;
+}
+
+#see-more .box {
+    flex-basis: 25%;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid var(--pri-clr);
+}
+
+#see-more h2 {
+    margin-bottom: 2em;
+}
+
+#see-more h3 {
+    font-weight: bolder;
+}
+
+#see-more img {
+    display: inline-block;
+    position: absolute;
+    margin-top: -35px;
+    margin-left: -19px;
+    padding: 10px;
+    padding-top: 0;
+    background: #fff;
+}

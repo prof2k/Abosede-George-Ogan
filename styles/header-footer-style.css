@@ -1,0 +1,192 @@
+:root {
+    /* --pri-clr: #1a232f; */
+    --pri-clr: #2c45a3;
+    --sec-clr: #3c3e3e;
+    --pri-hover-clr: #050941;
+    --pri-clr-light: #dbe1f5;
+    --sec-clr-light: #5fffeb;
+    --sec-clr-lighter: #e5fffc;
+    --useful-color: #2f3f54;
+    scroll-behavior: smooth;
+    --webkit-scroll-behavior: smooth;
+}
+
+header {
+    padding: 10px;
+    background: var(--pri-clr);
+    color: white;
+    overflow: hidden;
+    font-family: 'Poiret One', 'Product Sans';
+    z-index: 1;
+}
+
+header #home-link {
+    font-size: 1.4em;
+    font-weight: 100;
+    background: #2c46a47e;
+    padding: 5px 10px;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+#home-link span {
+    color: white;
+}
+
+
+#home-link:hover span {
+    color: white;
+
+}
+
+header nav a {
+    display: inline-block;
+    padding: 1em 1.2em;
+    letter-spacing: .9px;
+    font-weight: bold;
+    position: relative;
+}
+
+header nav a::after {
+    content: "";
+    position: absolute;
+    left: 20%; right: 20%;
+    bottom: -20px;
+    height: 5px;
+    /* margin-top: 200px; */
+    background: #050941;
+    border-radius: 3px 3px 0 0;
+    /* opacity: 0; */
+    transition: inherit;
+}
+
+header nav a:hover::after {
+    opacity: 1;
+    bottom: -10px;
+}
+
+a:hover {
+    color: var(--pri-hover-clr);
+}
+
+/* Footer */
+
+footer {
+    padding: 50px 10px;
+    color: white;
+    background: var(--pri-clr);
+    font-weight: bold;
+    font-family: 'Poiret One';
+}
+
+/* footer .container>* {
+    flex-basis: 45%;
+} */
+
+footer a[href] {
+    display: inline-block;
+    padding: 5px 10px;
+    transition: all ease-in-out 250ms, text-decoration linear 0s;
+}
+
+footer a:hover {
+    text-decoration: underline rgba(0,0,0,.2);
+}
+
+footer nav {
+    margin-bottom: 30px;
+}
+
+footer nav#footer-social {
+    cursor: default;
+}
+
+footer nav#footer-social a:hover {
+    opacity: .6;
+}
+
+footer address {
+    margin-top: -5px;
+}
+
+footer address>* {
+    padding: 0px 10px;
+    font-style: normal;
+}
+
+footer #contact-form {
+    padding: 0 10px;
+}
+
+#contact-form form {
+    position: relative;
+    margin-bottom: 1.2em;
+    margin-bottom: calc(1em + 25px);
+    padding-right: 10px;
+}
+
+footer #contact-form h3 {
+    margin-top: 0;
+}
+
+footer #contact-form input,
+footer #contact-form textarea {
+    position: relative;
+    display: inline-block;
+    padding: 12px 10px;
+    border: 2px solid white;
+    /* border-radius: 10px; */
+    font-size: 1em;
+    background: transparent;
+    width: 100%;
+    max-width: 300px;
+    min-height: 30px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+footer #contact-form input:focus,
+footer #contact-form textarea:focus {
+    background: rgba(0,0,0,.2);
+    outline: 0;
+}
+
+footer #contact-form input::placeholder,
+footer #contact-form textarea::placeholder {
+    color: white;
+    font-family: 'Poiret One';
+} 
+
+#contact-form button {
+    display: block;
+    padding: 1em 2em;
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    text-align: right;
+    font-size: 1em;
+    margin-top: 10px;
+    transition: all ease-in-out 250ms;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    /* line-height: 20px; */
+    /* font-weight: 100 !important; */
+}
+
+#contact-form button:hover {
+    color: var(--pri-clr);
+    background: #fff;
+}
+
+footer #contact-form button:focus {
+    outline: 0;
+}
+
+
+#copyright-and-developer-info {
+    width: 100%;
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-between;
+}

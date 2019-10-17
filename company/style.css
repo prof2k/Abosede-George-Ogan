@@ -1,0 +1,169 @@
+@import url("C:/Users/Kolawole Elijah/Desktop/sample codes/work/Abosede-George-Ogan/styles/universal-style.css");
+@import url("C:/Users/Kolawole Elijah/Desktop/sample codes/work/Abosede-George-Ogan/styles/header-footer-style.css");
+@import url("C:/Users/Kolawole Elijah/Desktop/sample codes/work/Abosede-George-Ogan/styles/typography.css");
+
+@import url("../styles/universal-style.css");
+@import url("../styles/header-footer-style.css");
+@import url("../styles/typography.css");
+
+:root {
+    --pri-clr: #2c46a4;
+    --sec-clr: #3c3e3e;
+    --pri-hover-clr: #050941;
+    --pri-clr-light: hsl(226, 57%, 96%);
+    --pink: #E91E63;
+    --pink-light: #fef0f4;
+    --sec-clr-lighter: #e5fffc;
+    --useful-color: #2f3f54;
+    --theme-color: #2c46a4;
+    scroll-behavior: smooth;
+    --webkit-scroll-behavior: smooth;
+}
+/* header */
+header {
+    background: var(--pink-light);
+    color: var(--pink);
+    font-family: 'product Sans';
+    font-weight: 100;
+    /* box-shadow: inset 0 -20px rgba */
+}
+
+header a:hover {
+    color: hsl(340, 82%, 32%);
+}
+
+header nav a {
+    font-weight: 500;
+    color: white;
+    box-shadow: inset 5px 10px 5px rgba(0,0,0,.3);
+    text-shadow: -1px 1px 0px hsl(340, 82%, 22%);
+    background: hsl(340, 82%, 72%);
+    padding: 10px;
+    margin: 0 10px;
+    border-radius: 50px;
+    /* transform: skew(20deg); */
+}
+
+a#home-link {
+    background: none;
+    font-family: 'monotype corsiva';
+    font-weight: 500;
+    font-size: 2em;
+}
+
+a#home-link:hover {
+    color: unset;
+    text-shadow: 0 0 .1em, 0 0 3em;
+}
+
+
+/* Universal */
+.read-more {
+    display: inline-block;
+    padding: 1em 2em;
+    border: 2px solid var(--pri-clr);
+    /* font-weight: 500; */
+}
+
+.read-more:hover {
+    color: white;
+    background: var(--pri-clr);
+}
+
+/* Portfolio */
+
+article::before {
+    content: "";
+    position: absolute;
+    left: 0; right: 0;
+    height: 70vh;
+    top: 0;
+    background: var(--pink-light);
+    background: var(--pink);
+    /* background-image: radial-gradient(hsl(340, 82%, 82%) 20%, transparent 0), */
+                      radial-gradient(hsl(340, 82%, 82%) 20%, transparent 0);
+    background-size: 30px 30px;
+    background-position: 0 0, 15px 15px;
+    z-index: -1;
+}
+
+#heading {
+    padding: 50px 0;
+    /* background: var(--pri-clr); */
+    font-size: 5em;
+    line-height: .5em;
+    color: #fff;
+    text-align: center;
+}
+
+#heading img {
+    border-radius: 100%;
+    background: transparent;
+    /* background-image: radial-gradient(hsl(227, 57%, 51%) 25%, transparent 0),
+                      radial-gradient(hsl(227, 57%, 51%) 35%, transparent 0);
+    background-size: 40px 40px; */
+    background-position: 0 0, 15px 15px;
+    height: 200px;
+    width: 200px;
+    border: 2px solid white;
+    object-fit: cover;
+}
+
+#heading h1 {
+    margin: 0;
+    display: inline-block;
+}
+
+#heading>* {
+    margin: 0 20px;
+}
+
+/* Article */
+article .inner-container {
+    background: var(--pri-clr-light);
+    padding: 50px 30px;
+    line-height: 1.5em;
+    font-size: 1.1em;
+}
+
+article .inner-container::first-letter {
+    font-family: 'Poiret One';
+    font-size: 3.5em;
+    line-height: 0;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* See More*/
+
+#see-more {
+    margin: 20px 0;
+    padding: 0;
+}
+
+#see-more h2 {
+    margin-bottom: 1.2em;
+}
+
+#see-more .box {
+    flex-basis: 30%;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    border: 2px solid var(--pri-clr);
+    margin: 20px;
+}
+
+#see-more h3 {
+    font-weight: bold;
+}
+
+#see-more img {
+    display: inline-block;
+    position: absolute;
+    margin-top: -35px;
+    margin-left: -19px;
+    padding: 10px;
+    padding-top: 0;
+    background: #fff;
+}

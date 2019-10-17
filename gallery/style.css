@@ -1,0 +1,127 @@
+@import url("C:/Users/Kolawole Elijah/Desktop/sample codes/work/Abosede-George-Ogan/styles/universal-style.css");
+@import url("C:/Users/Kolawole Elijah/Desktop/sample codes/work/Abosede-George-Ogan/styles/header-footer-style.css");
+@import url("C:/Users/Kolawole Elijah/Desktop/sample codes/work/Abosede-George-Ogan/styles/typography.css");
+
+@import url("../styles/universal-style.css");
+@import url("../styles/header-footer-style.css");
+@import url("../styles/typography.css");
+
+:root {
+    --pri-clr: #2c46a4;
+    --sec-clr: #3c3e3e;
+    --pri-hover-clr: #050941;
+    --pri-clr-light: hsl(226, 57%, 96%);
+    --pink: #E91E63;
+    --pink-light: #fef0f4;
+    --sec-clr-lighter: #e5fffc;
+    --useful-color: #2f3f54;
+    --theme-color: #2c46a4;
+    scroll-behavior: smooth;
+    --webkit-scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Universal */
+.read-more {
+    display: inline-block;
+    padding: 1em 2em;
+    border: 2px solid var(--pri-clr);
+    /* font-weight: 500; */
+}
+
+.read-more:hover {
+    color: white;
+    background: var(--pri-clr);
+}
+
+/* Portfolio */
+
+article::before {
+    content: "";
+    position: absolute;
+    left: 0; right: 0;
+    height: 70vh;
+    top: 0;
+    background: var(--pri-clr);
+    z-index: -1;
+}
+
+#heading {
+    padding: 50px 0;
+    background: var(--pri-clr);
+    font-size: 5em;
+    /* line-height: .5em; */
+    color: white;
+    text-align: center;
+}
+
+#heading h1 {
+    margin: 0;
+    display: inline-block;
+}
+
+/* Pics */
+#pics {
+    padding-bottom: 0;
+}
+
+#pics .inner-container {
+    column-count: 3;
+}
+
+#pics img {
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 10px;
+    display: block;
+    /* filter:  hue-rotate(0deg); */
+}
+
+#pics img::after {
+    content: attr(alt);
+    display: block;
+    width: 100px;
+    height: 50px;
+    /* position: absolute; */
+    left: 0; right: 0;
+    top: 80%; bottom: 0;
+    background: rgba(0,0,0,.5);
+    z-index: 1;
+}
+
+
+/* See More*/
+
+#see-more {
+    margin: 20px 0;
+    /* padding: 0; */
+}
+
+#see-more h2 {
+    margin-bottom: .5em;
+}
+
+#company-details {
+    /* max-width: 900px; */
+    padding: 50px 30px;
+    padding-top: 20px;
+    background: var(--pink-light);
+    /* border: 2px solid var(--pink); */
+    /* border-radius: 50px; */
+}
+
+#company-details p {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#company-details .read-more {
+    border-color: var(--pink);
+    /* border-radius:   50px; */
+
+}
+
+#company-details .read-more:hover {
+    background: var(--pink);
+}

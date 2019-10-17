@@ -1,0 +1,51 @@
+p {
+    letter-spacing: 1px;
+    line-height: 1.5em;
+    font-family:  'Cormorant Garamond semibold','segoe ui';
+    font-weight: 500;
+    /* font-size: 1.1em; */
+}
+
+section:not(#personality-life):not(#welcome) p {
+    line-height: 2em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Poiret One';
+}
+
+a[href] {
+    text-decoration: none;
+}
+
+.product-sans {
+    font-family: 'Product Sans';
+}
+
+.poiret-one {
+    font-family: 'Poiret One'
+}
+
+.segoe-ui {
+    font-family: 'Segoe UI';
+}
+
+article a[href] {
+    color: var(--theme-color);
+    text-decoration: underline;
+    text-decoration: none;
+    transition: all ease-in-out 250ms, text-decoration linear 0s;
+}
+
+article a[href]:hover {
+    color: var(--pri-hover-clr);
+    text-decoration: underline rgba(0,0,0,.3);
+}
+
+.bg-pink-light {
+    background: var(--pink-light);
+}

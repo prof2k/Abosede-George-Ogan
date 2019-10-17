@@ -1,0 +1,137 @@
+@import url("C:/Users/Kolawole Elijah/Desktop/sample codes/work/Abosede-George-Ogan/styles/universal-style.css");
+@import url("C:/Users/Kolawole Elijah/Desktop/sample codes/work/Abosede-George-Ogan/styles/header-footer-style.css");
+@import url("C:/Users/Kolawole Elijah/Desktop/sample codes/work/Abosede-George-Ogan/styles/typography.css");
+
+@import url("../styles/universal-style.css");
+@import url("../styles/header-footer-style.css");
+@import url("../styles/typography.css");
+
+:root {
+    --pri-clr: #2c46a4;
+    --sec-clr: #3c3e3e;
+    --pri-hover-clr: #050941;
+    --pri-clr-light: hsl(226, 57%, 96%);
+    --pink: #E91E63;
+    --pink-light: #fef0f4;
+    --sec-clr-lighter: #e5fffc;
+    --useful-color: #2f3f54;
+    --theme-color: #2c46a4;
+    scroll-behavior: smooth;
+    --webkit-scroll-behavior: smooth;
+}
+/* Universal */
+
+.read-more {
+    display: inline-block;
+    padding: 1em 2em;
+    border: 2px solid var(--pri-clr);
+    /* font-weight: 500; */
+}
+
+.read-more:hover {
+    color: white;
+    background: var(--pri-clr);
+}
+
+/* Work */
+#heading {
+    padding: 50px 0;
+    background: var(--pri-clr);
+    font-size: 5em;
+    line-height: .5em;
+    color:white;
+    text-align: center;
+}
+
+#work::before {
+    content: "";
+    position: absolute;
+    left: 0; right: 0;
+    height: 70vh;
+    top: 0;
+    background: var(--pri-clr);
+    z-index: -1;
+}
+
+#heading h1 {
+    margin: .3em;
+    display: inline-block;
+}
+
+#heading img {
+    border-radius: 100%;
+    background: transparent;
+    background-image: radial-gradient(hsl(227, 57%, 51%) 25%, transparent 0),
+                      radial-gradient(hsl(227, 57%, 51%) 35%, transparent 0);
+    background-size: 40px 40px;
+    background-position: 0 0, 15px 15px;
+    height: 200px;
+    width: 200px;
+    border: 2px solid white;
+    object-fit: cover;
+}
+
+#work .box {
+    padding: 2em;
+    background: var(--pri-clr-light);
+    position: relative;
+    margin-bottom: 2em;
+}
+
+#work .box:last-child {
+    margin-bottom: 0;
+}
+
+#work .box::after {
+    /* content: ""; */
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 5%; right: 5%;
+    height: 2px;
+    background: #333;
+}
+
+#work .box .content {
+    flex-basis: 60%;
+    padding: 10px;
+}
+
+.box>div:not(.content) {
+    text-align: center;
+    flex-basis: 30%;
+    border-right: 2px solid var(--pri-clr);
+    padding: 10px;
+}
+
+/* Check also */
+#personality-life {
+    padding-top: 0;
+    margin: 20px 0;
+    margin-top: 0;
+}
+
+#personality-life .box {
+    flex-basis: 25%;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid var(--pri-clr);
+}
+
+#personality-life h2 {
+    margin-bottom: 2em;
+}
+
+#personality-life h3 {
+    font-weight: bold;
+}
+
+#personality-life img {
+    display: inline-block;
+    position: absolute;
+    margin-top: -35px;
+    margin-left: -19px;
+    padding: 10px;
+    padding-top: 0;
+    background: #fff;
+}
