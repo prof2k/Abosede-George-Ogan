@@ -192,7 +192,7 @@ h1 {
 
 @media(max-width: 650px) {
     .col-3>* {
-        min-width: 250px;
+        min-width: 70%;
     }
 }
 
@@ -562,5 +562,17 @@ a.clr-333 {
 
     .container.bigger {
         width: 95%;
+    }
+}
+
+@media(max-width: 790px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+@media(max-width: 500px) {
+    body {
+        font-size: 12px;
     }
 }
