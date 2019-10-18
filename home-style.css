@@ -162,8 +162,9 @@
 }
 
 @media(max-width: 650px) {
-    #heading {
+#heading {
         line-height: unset;
+        padding-top: 20px;
     }
 
     #heading img {

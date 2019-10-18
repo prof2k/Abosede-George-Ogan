@@ -183,12 +183,14 @@ figure {
 }
 
 @media(max-width: 650px) {
-    #heading {
+#heading {
         line-height: unset;
+        padding-top: 20px;
     }
 
-    #heading img {
-        max-width: 80vw;
+    #heading svg {
+        width: 80%;
+        max-width: 100px;
         /* max-height: 80vw; */
     }
 
@@ -204,7 +206,7 @@ figure {
 #heading {
     padding: 50px 0;
     background: var(--pri-clr);
-    /* font-size: 3em; */
+    font-size: 3em;
     /* line-height: .5em; */
     color: white;
     text-align: center;

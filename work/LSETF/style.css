@@ -120,8 +120,10 @@ article .inner-container::first-letter {
 }
 
 @media(max-width: 650px) {
-    #heading {
+#heading {
         line-height: unset;
+        padding-top: 20px;
+        padding-top: 20px;
     }
 
     #heading img {
@@ -136,19 +138,14 @@ article .inner-container::first-letter {
     article .inner-container {
         padding: 2em 1em;
     }
-}
 
-#heading {
-    padding: 50px 0;
-    background: var(--pri-clr);
-    /* font-size: 3em; */
-    /* line-height: .5em; */
-    color: white;
-    text-align: center;
-}
+    #heading h1 {
+        font-size: 2em;
+    }
 
-#heading h1 {
-    margin: 0;
-    display: inline-block;
-    font-size: 1.5em;
+    #heading img {
+        max-width: 200px;
+        max-height: 120px;
+        height: auto;
+    }
 }

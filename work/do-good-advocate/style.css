@@ -59,6 +59,8 @@ article::before {
     margin-top: .8em;
     height: 150px;
     object-fit: cover;
+    max-width: 90%;
+    height: auto;
 }
 
 #heading h1 {
@@ -120,8 +122,9 @@ article .inner-container::first-letter {
 }
 
 @media(max-width: 650px) {
-    #heading {
+#heading {
         line-height: unset;
+        padding-top: 20px;
     }
 
     #heading img {
@@ -136,19 +139,12 @@ article .inner-container::first-letter {
     article .inner-container {
         padding: 2em 1em;
     }
-}
 
-#heading {
-    padding: 50px 0;
-    background: var(--pri-clr);
-    /* font-size: 3em; */
-    /* line-height: .5em; */
-    color: white;
-    text-align: center;
-}
+    #heading h1 {
+        font-size: 1.8em;
+    }
 
-#heading h1 {
-    margin: 0;
-    display: inline-block;
-    font-size: 1.5em;
+    #heading img {
+        max-height: 120px;
+    }
 }
