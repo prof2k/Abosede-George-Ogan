@@ -132,6 +132,39 @@
     margin-top: -35px;
     margin-left: -19px;
     padding: 10px;
-    padding-top: 0;
     background: #fff;
+}
+
+@media(max-width: 650px) {
+    #heading {
+        line-height: unset;
+    }
+
+    #heading img {
+        max-width: 80vw;
+        /* max-height: 80vw; */
+    }
+
+    #heading h1 {
+        font-size: 3em;
+    }
+
+    article .inner-container {
+        padding: 2em 1em;
+    }
+}
+
+#heading {
+    padding: 50px 0;
+    background: var(--pri-clr);
+    /* font-size: 3em; */
+    /* line-height: .5em; */
+    color: white;
+    text-align: center;
+}
+
+#heading h1 {
+    margin: 0;
+    display: inline-block;
+    font-size: 1.5em;
 }

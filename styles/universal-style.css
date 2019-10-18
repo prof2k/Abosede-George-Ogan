@@ -60,7 +60,7 @@ a {
 
 /* -- element styles */
 section, article {
-    padding: 50px 0; 
+    padding: 3em 0;
 }
 
 h1 {
@@ -568,6 +568,10 @@ a.clr-333 {
 @media(max-width: 790px) {
     body {
         font-size: 14px;
+    }
+
+    section, article {
+        padding: 2em 0;
     }
 }
 

@@ -114,7 +114,7 @@
     height: 20px;
     border-radius: 100%;
     background: #fff;
-    /* box-shadow: inset 3px 2px 3px rgba(0,0,0,.55); */
+    box-shadow: inset 3px 2px 3px rgba(0,0,0,.55);
 }
 
 .experience p {
@@ -167,4 +167,22 @@
     padding: 10px;
     padding-top: 0;
     background: #fff;
+}
+
+@media(max-width: 400px) {
+    .experience {
+        flex-direction: column;
+        align-items: unset;
+    }
+
+    .experience h3{
+        flex-grow: 1;
+        flex-basis: 100%
+    }
+
+    .experience p::after {
+        left: 0;
+        bottom: 0;
+        top: 0;
+    }
 }
