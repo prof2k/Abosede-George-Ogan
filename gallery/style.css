@@ -1,6 +1,6 @@
-@import url("https://prof2k.github.io/Abosede-George-Ogan/styles/universal-style.css");
-@import url("https://prof2k.github.io/Abosede-George-Ogan/styles/header-footer-style.css");
-@import url("https://prof2k.github.io/Abosede-George-Ogan/styles/typography.css");
+@import url("https://prof2k.github.io/Abosede-George-Ogan/Abosede-George-Ogan/styles/universal-style.css");
+@import url("https://prof2k.github.io/Abosede-George-Ogan/Abosede-George-Ogan/styles/header-footer-style.css");
+@import url("https://prof2k.github.io/Abosede-George-Ogan/Abosede-George-Ogan/styles/typography.css");
 
 @import url("../styles/universal-style.css");
 @import url("../styles/header-footer-style.css");
@@ -58,7 +58,6 @@ article::before {
 #heading h1 {
     margin: 0;
     display: inline-block;
-    font-size: 3em;
 }
 
 /* Pics */
@@ -73,7 +72,7 @@ article::before {
 #pics img {
     width: 100%;
     margin-top: 10px;
-    margin-left: 10px;
+    margin: 10px 5px;
     display: block;
     /* filter:  hue-rotate(0deg); */
 }
@@ -125,4 +124,33 @@ article::before {
 
 #company-details .read-more:hover {
     background: var(--pink);
+}
+
+
+@media(max-width: 650px) {
+    #pics .inner-container {
+        column-count: 2;
+    }
+
+    #pics .inner-container div {
+        display: none;
+    }
+}
+
+@media(max-width: 400px) {
+    #heading h1 {
+        font-size: 1em;
+    }
+
+    #pics .inner-container {
+        column-count: 1;
+    }
+
+    #pics img {
+        margin-left: 0;
+    }
+
+    #pics .inner-container div {
+        display: none;
+    }
 }

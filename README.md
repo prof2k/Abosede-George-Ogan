@@ -1,2 +1,4 @@
 # Abosede-George-Ogan
- Personal Website
+Personal Website
+Built from scratch 
+Web Developer - Elijah Kolawole

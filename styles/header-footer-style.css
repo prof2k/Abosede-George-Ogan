@@ -75,6 +75,23 @@ header input#nav_activator {
     clip: rect(0,0,0,0);
 }
 
+.ssoc {
+    display: none;
+}
+
+#nav-overlay {
+    position: absolute;
+    top: 0; bottom: 0;
+    right: 0; left: 0;
+    height: 150vh;
+    width: 150vw;
+    margin-top: -25vh;
+    margin-left: -25vw;
+    z-index: 998;
+    transition: all ease-in-out 250ms;
+    visibility: hidden;
+}
+
 /* Footer */
 
 footer {
@@ -225,6 +242,9 @@ footer #contact-form button:focus {
 }
 
 @media(max-width: 790px) {
+    .ssoc {
+        display: unset;
+    }
     header {
         position: fixed;
         top: 0;
@@ -339,6 +359,15 @@ footer #contact-form button:focus {
         display: block;
         padding: 10vh 50px;
         min-width: 35vw;
+    }
+
+    header {
+        overflow: visible;
+    }
+
+    input#nav_activator:checked~#nav-overlay {
+        background: rgba(0,0,0,.5);
+        visibility: visible;
     }
 }
 
